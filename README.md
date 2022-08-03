@@ -5,7 +5,7 @@ Das Input sollte so aussehen:
 
 big / small (kisten menü), das Item, mit dem die Kiste gefüllt sein soll
 
-In der .txt steht der ganze Code.
+- In der .txt steht der ganze Code.
 
 Die .exe ist macht genau das gleiche, wie die .py.
 
