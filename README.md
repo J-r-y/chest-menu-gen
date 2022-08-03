@@ -3,7 +3,7 @@ Generiert eine .png von dem oberen Menü einer Kiste, gefüllt mit den ausgewäh
 
 Das Input sollte so aussehen:
 
-- big / small (kisten menü), das Item, mit dem die Kiste gefüllt sein soll
+- big / small (kisten menü), der komplette Name des Items nur ohne Unterstrich (z.B. oak chest boat, crossbow firework)
 
 In der .txt steht der ganze Code.
 
