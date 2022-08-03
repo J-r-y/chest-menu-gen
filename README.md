@@ -1,5 +1,5 @@
 # chest-menu-gen
-Generiert eine .png von dem oberen Menü einer doppel Kiste, gefüllt mit den ausgewählten items. (Blöcke gehen noch nicht, habe einfach den Items Ordner kopiert. Es kann sein, dass es Bugs gibt).
+Generiert eine .png von dem oberen Menü einer Kiste, gefüllt mit den ausgewählten items. (Blöcke gehen noch nicht, habe einfach den Items Ordner kopiert. Es kann sein, dass es Bugs gibt).
 
 In der .txt steht der ganze Code.
 
