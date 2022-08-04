@@ -5,7 +5,7 @@ Das Input sollte so aussehen:
 
 - big / small (kisten menü), der komplette Name des Items nur ohne Unterstrich (z.B. oak chest boat, crossbow firework)
 
-Ich kenne mich überhaupt nicht mit dem teilen von Programmen etc. aus, also wenn es sich nach dem öffnen einfach wieder schließt bzw. ein Error auftritt, dann muss man warscheinlich die Python library Pillow (die ist zum laden, bearbeiten und speichern von Bildern) installieren (pip install Pillow). Online findet man zu der library noch mehr Infos
+Ich kenne mich überhaupt nicht mit dem teilen von Programmen etc. aus und konnte es noch nicht mit einem anderen Gerät testen, also wenn es sich nach dem öffnen einfach wieder schließt bzw. ein Error auftritt, dann muss man warscheinlich die Python library Pillow (die ist zum laden, bearbeiten und speichern von Bildern) installieren (pip install Pillow). Online findet man zu der library noch mehr Infos
 
 In der .txt steht der ganze Code.
 
