@@ -2,7 +2,6 @@
 Generiert eine .png von dem oberen Menü einer Kiste, gefüllt mit den ausgewählten items. (Blöcke gehen noch nicht, habe einfach den Items Ordner kopiert. Es kann sein, dass es Bugs gibt).
 
 Das Input sollte so aussehen:
-
 - big / small (kisten menü), der komplette Name des Items nur ohne Unterstrich (z.B. oak chest boat, crossbow firework)
 
 Requirements:
