@@ -7,4 +7,4 @@ Das Input sollte so aussehen:
 
 Ich kenne mich überhaupt nicht mit dem teilen von sowas aus und konnte es noch nicht mit einem anderen Gerät testen, also wenn es sich nach dem öffnen einfach wieder schließt bzw. ein Error auftritt, dann muss man warscheinlich die Python library Pillow (die ist zum laden, bearbeiten, speichern, usw. von Bildern) installieren (pip install Pillow). Online findet man zu der library noch mehr Infos.
 
-In der .txt steht der ganze Code.
+In der .txt steht der ganze Code und man kann auch die .py rechtsklicken und auf "Öffnen mit" und dann Editor.
