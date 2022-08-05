@@ -54,10 +54,13 @@ else:
         chest_img = Image.open("res/chest_small.png")
     chest_img = chest_img.convert("RGBA")
 
-    # check ob das Item sich überhaupt stacken lässt (z.B. Rüstung kann man nicht stacken)
+    # checkt ob das Item sich überhaupt stacken lässt (z.B. Rüstung kann man nicht stacken)
     for z in non_stackable_items:
         if z in item_url:
             non_stackable = True
+    # bow ist in der Liste der unstackable Items (für bow, crossbow, usw.), aber in bowl ist bow, deswegen für bowl trotzdem stackable setzen
+    if item_url == "bowl":
+        non_stackable = False
 
     # die Item-Bilder und "16" bzw. "64" in jeden Slot des Kisten-Menüs einfügen
     for y in range(rows):
