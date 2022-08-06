@@ -1,3 +1,5 @@
+import PIL as pil
+import PIL.Image
 from PIL import Image
 
 rows = 6
@@ -24,13 +26,20 @@ non_stackable_items = ["_bucket",
                        "writable_book",
                        "trident"]
 
-print("Input: big / small (chest), item (der genaue name, statt unterstrich leertaste) z.B.: big, melon slice")
+print("Input: big / small (chest), item (der genaue name, statt unterstrich leertaste), scale")
 eingabe = input()  # Input in 'eingabe' speichern
 configuration = eingabe.split(", ")  # Kisten-Typ und Item speichern
 if " " in configuration[1]:
     item_url = configuration[1].replace(" ", "_")  # Leerzeichen mit Unterstrich ersetzen
 else:
     item_url = configuration[1]
+
+if len(configuration) == 2:
+    scale = 1
+else:
+    scale = configuration[2]
+
+chest_size = configuration[0]
 
 try:
     item_img = Image.open(f"res/items/{item_url}.png")  # versuchen, das Bild des Items zu laden
@@ -46,10 +55,10 @@ else:
     count_img = count_img.convert("RGBA")
 
     # Kisten-Typ abgleichen und das passende Bild laden
-    if configuration[0] == "big":
+    if chest_size == "big":
         rows = 6
         chest_img = Image.open("res/chest_big.png")
-    elif configuration[0] == "small":
+    elif chest_size == "small":
         rows = 3
         chest_img = Image.open("res/chest_small.png")
     chest_img = chest_img.convert("RGBA")
@@ -69,5 +78,9 @@ else:
             if not non_stackable:
                 chest_img.paste(count_img, (x * 18 + 8, y * 18 + 8), count_img)
 
-    # das fertige Bild speichern
-    chest_img.save("kiste.png", quality=100, format="png")
+    # das Bild mit scale vergräßern
+    width, height = chest_img.size
+    output_img = chest_img.resize((int(width) * int(scale), int(height) * int(scale)), resample=Image.Resampling.NEAREST)
+
+    # die schärfe verbessern und das Bild speichern
+    output_img.save("kiste.png", quality=200, format="png")
