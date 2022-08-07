@@ -25,7 +25,7 @@ non_stackable_items = ["_bucket",
                        "music_disc",
                        "writable_book",
                        "trident",
-			     "totem_of_undying"]
+		       "totem_of_undying"]
 
 print("Input: big / small (chest), item (der genaue name, statt unterstrich leertaste), scale")
 eingabe = input()  # Input in 'eingabe' speichern
