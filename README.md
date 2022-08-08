@@ -1,6 +1,4 @@
 # chest-menu-gen
-Cast wenn du das hier liest: was ist mit Item Scroller xD? https://www.curseforge.com/minecraft/mc-mods/item-scroller
-
 Generiert eine .png von dem oberen Menü einer Kiste, gefüllt mit den ausgewählten items. (Blöcke gehen noch nicht, habe einfach den Items Ordner kopiert. Es kann sein, dass es Bugs gibt).
 
 Das Input sollte so aussehen:
