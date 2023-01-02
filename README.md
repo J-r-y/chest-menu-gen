@@ -1,4 +1,6 @@
 # chest-menu-gen
+BLÖCKE WURDEN HINZUGEFÜGT!
+
 Generiert eine .png von dem oberen Menü einer Kiste, gefüllt mit den ausgewählten items.
 
 Das Input sollte so aussehen:
