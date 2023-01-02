@@ -1,11 +1,10 @@
-import PIL as pil
-import PIL.Image
 from PIL import Image
 
 rows = 6
 non_stackable = False
 # Liste mit unstackable Items
-non_stackable_items = ["_bucket",
+non_stackable_items = ["bundle",
+                       "_bucket",
                        "boat",
                        "sword",
                        "pickaxe",
@@ -25,7 +24,7 @@ non_stackable_items = ["_bucket",
                        "music_disc",
                        "writable_book",
                        "trident",
-		       "totem_of_undying"]
+                       "totem_of_undying"]
 
 print("Input: big / small (chest), item (der genaue name, statt unterstrich leertaste), scale")
 eingabe = input()  # Input in 'eingabe' speichern
@@ -49,7 +48,7 @@ except FileNotFoundError:
     print(f"{configuration[1]} ist kein item in minecraft oder du hast dich verschrieben.")
 else:
 
-    if item_url == "ender_pearl" or "sign" in item_url or "egg" in item_url or "honey_bottle" in item_url:
+    if item_url == "ender_pearl" or "sign" in item_url or "egg" in item_url or "honey_bottle" in item_url or "bucket" in item_url:
         count_img = Image.open("res/count16.png")  # wenn ein Stack 16 ist
     else:
         count_img = Image.open("res/count64.png")  # wenn ein Stack 64 ist
@@ -75,9 +74,9 @@ else:
     # die Item-Bilder und "16" bzw. "64" in jeden Slot des Kisten-Menüs einfügen
     for y in range(rows):
         for x in range(9):
-            chest_img.paste(item_img, (x * 18 + 8, y * 18 + 8), item_img)
+            chest_img.paste(item_img, (x * 54 + 24, y * 54 + 24), item_img)
             if not non_stackable:
-                chest_img.paste(count_img, (x * 18 + 8, y * 18 + 8), count_img)
+                chest_img.paste(count_img, (x * 54 + 24, y * 54 + 24), count_img)
 
     # das Bild mit scale vergräßern
     width, height = chest_img.size
