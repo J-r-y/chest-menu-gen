@@ -1,6 +1,8 @@
 # chest-menu-gen
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 BLÖCKE WURDEN HINZUGEFÜGT!
 Man muss jetzt nur den Items Ordner nach dem Download unzipen bzw. den Ordner in der Zip rausschieben, weil es zu viele Items sind, um sie auf Github in einem Ordner zu haben.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Generiert eine .png von dem oberen Menü einer Kiste, gefüllt mit den ausgewählten items.
 
